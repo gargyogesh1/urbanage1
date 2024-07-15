@@ -1,0 +1,41 @@
+
+
+{% load static %}
+<div class="wrapper">
+    <i class="fa fa-times fa-2x close-button" aria-hidden="true" style="margin-top: 9px;width: 100%;/* flex-direction: column; */display: flex;color: white;/* flex-direction: column; */justify-content: end;margin-right: 27px;"></i>    <div class="form-box login" style="width: 79%;">
+        <h2 style="margin-top: 22px;">Contact Here</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class = "input-box">
+                <spam class="icon">
+                    <ion-icon name ="Name"></ion-icon>
+                </spam>
+                <input name ="name" type = "Text" required>
+                <label>Full Name</label>
+            </div>
+            
+            <div class = "input-box">
+                <spam class="icon">
+                    <ion-icon name ="phone_no"></ion-icon>
+                <input name = "phone_no" type = "Text" required>
+                <label>Phone no</label>
+                <div style="color:red;">
+                {% for error in form.phone_no.errors %}
+               Not a valid no
+              {% endfor %}
+                </div>
+            </div>
+            <div class = "input-box">
+                <spam class="icon">
+                    <ion-icon name ="mail"></ion-icon>
+                <input name="email"type = "email" required>
+                <label>Email id</label>
+            </div>
+            
+            <button name = "submit" type="submit" class="btn" style="background-color: #FB8C00;">SUBMIT</button>
+            <div class="login-register">
+                <p style="color:white;"> Don't have an account ? <a href="#" class="register-link">Register</a> </p>
+            </div>
+        </form>
+    </div>         
+</div>

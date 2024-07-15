@@ -1,0 +1,62 @@
+{% load static %}
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Properties
+        </h2>
+      </div>
+{% comment %} 
+  <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".Lakhs">LAKHS</li>
+        <li data-filter=".Crore">CRORE</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul> {% endcomment %}
+
+      <div class="filters-content">
+        <div class="row grid">
+          {% for card in cards %}
+<div class="col-sm-6 col-lg-4 all {{ card.category }}">
+    <div class="box">
+        <div>
+            <div class="img-box">
+                <img src= "{% static card.img_src %}" alt=""  style="border-radius: 10px;">
+            </div>
+            <div class="detail-box">
+                <h5>
+                    {{ card.title }}
+                </h5>
+                <p>
+                    {{ card.description }}
+                </p>
+                <p style= "height: 46px;">{{ card.description1 }}</p>
+                <div class="options">
+                    <h6>
+                        {{ card.price }}
+                    </h6>
+                    <div class="show-pop_up">
+
+                    <a style="cursor: pointer;">
+                       
+                        <img src= {% static "images/removeicon.png" %} alt="" style="height:35px; filter: brightness(0) invert(1);">
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+         
+        </div>
+      </div>
+      {% comment %} <div class="btn-box">
+        <a href="">
+          View More
+        </a>
+      </div> {% endcomment %}
+    </div>
+  </section>

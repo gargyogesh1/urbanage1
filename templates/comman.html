@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href= {% static "images/favicon.jpg" %} type="">
+
+  <title> Urbanage </title>
+  <link rel="stylesheet" type="text/css" href= {% static "css/popup.css" %} />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href= {% static "css/bootstrap.css" %} />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href= {% static "css/font-awesome.min.css" %} rel="stylesheet" />
+  {% comment %} <script type="module" crossorigin src="js/script2.js"></script> {% endcomment %}
+  <link rel="modulepreload" href="{% static 'js/script.js' %}">
+  <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+  <!-- Custom styles for this template -->
+  <link href= {% static "css/style3.css" %} rel="stylesheet" />
+  <link href= {% static "css/style.css" %} rel="stylesheet" />
+  <!-- responsive style -->
+  <link href= {% static "css/responsive.css" %} rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="header_section" style="position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: #343233; ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container navbar-static-top" >
+        <a class="navbar-brand" href="">
+          <span>
+            <img src="/static/images/faltulogo.png" alt="URBANAGE LANDBASE Logo" style=" height: 93px; margin-top: 17px;"> </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Overview">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#properties">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#amenities">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            
+          </ul>
+          <div class="user_option">
+            {% comment %} <a href="" class="user_link">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="cart_link" href="#">
+                <img src= {% static "images/removeicon.png" %} alt="" style="height:35px; filter: brightness(0) invert(1);">
+            </a>
+            <form class="form-inline">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button> {% endcomment %}
+            </form>
+            <div class="show-pop_up">
+            <a  class="order_online show-popup" style="color:Black;" style="cursor: pointer;">
+              <div style="display: flex;align-items: center;">
+              Brochure <i class="fa fa-download" aria-hidden="true" style="margin-left:5px;" ></i>
+              </div>
+            </a>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+<header class="header_section" style="
+  top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #343233; ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container" >
+        <a class="navbar-brand" href="">
+          <span>
+            <img src="/static/images/M3Mbg.png" alt="URBANAGE LANDBASE Logo" style=" height: 93px; margin-top: 17px;">            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#propertiesLine">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Gallery</a>
+            </li>
+          </ul>
+          <div class="user_option">
+            {% comment %} <a href="" class="user_link">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="cart_link" href="#">
+                <img src= {% static "images/removeicon.png" %} alt="" style="height:35px; filter: brightness(0) invert(1);">
+            </a>
+            <form class="form-inline">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button> {% endcomment %}
+            </form>
+            <span  class="order_online" style="color:Black;">
+              <div style="display: flex;align-items: center;">
+              Brochure <i class="fa fa-download" aria-hidden="true" style="margin-left:5px;" ></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+</header> 
+  <div class="hero_area">
+    
+    <!-- header section strats -->
+
+
+    <div class="bg-box">
+      {% comment %} <img src= "/static/images/front45.png" alt="">  {% endcomment %}
+    </div>
+    <div class="close1" style="z-index: 1000;position: fixed; height: 100%; width: 100%;">
+      <div  class="close2" style="height: 100%;width: 100%;justify-content: center;flex-direction: row; backdrop-filter: blur(5px);">
+          {% include 'popup.html' %}
+      </div>
+    </div>
+    <!-- end header section -->
+     {% block content %}
+
+     {% endblock %}
+     <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <div style="
+                  height: 1px;
+                  background-color: white;
+                  flex: 1;
+                  align-content: center;
+                  margin-top: 30px;
+                  margin-Bottom:58px;
+                  margin-right:5px;"></div>
+            <h4>
+              Quick Link
+            </h4>
+            <div class="contact_link_box">
+              <a  href="#Overview">Overview <span class="sr-only">(current)</span></a>
+              <a  href="#properties">Projects</a>
+              <a  href="#prices">Prices</a>
+              <a  href="#amenities">Amenities</a>
+              <a  href="#gallery">Gallery</a>
+              <a  href="#location">Location</a>
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <div class="footer_social" style="margin-bottom: 39px;">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+            <a href="" class="footer-logo">
+              <img src="/static/images/M3Mbg.png" alt="URBANAGE LANDBASE Logo" style="height: 129px;">            </a>
+            <p>
+              M3M Group is a renowned real estate developer known for delivering iconic residential, commercial, and mixed-use projects. M3M has redefined luxury living and working spaces in Gurugram. 
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div style="
+              height: 1px;
+              background-color: white;
+              flex: 1;
+              align-content: center;
+              margin-top: 30px;
+              margin-Bottom:58px;
+              margin-right:5px;"></div>
+          <h4>
+            Contact Us
+          </h4>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Office 311, Floor 3rd, Emaar Palm Square, Golf Course Extn. Rd, Sector 66, Gurugram, Haryana
+          </p>
+          <p>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <a href="mailto:info@urbanage.co.in" target="_blank">info@urbanage.co.in</a>
+          </p>
+          <p>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>            
+            <a href="tel:+91 92051 59267" target="_blank">+91 92051 59267</a>          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          {% comment %} &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> {% endcomment %}
+          <b>Disclaimer: </b> The content provided on this website is for information purposes only and does not constitute an offer to avail any service. The prices mentioned are subject to change without prior notice, and the availability of properties mentioned is not guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved. The content, design, and information on this website are protected by copyright and other intellectual property rights. Any unauthorized use or reproduction of the content may violate applicable laws. For accurate and up-to-date information regarding services, pricing, availability, and any other details, it is advisable to contact us directly through the provided contact information on this website. 
+        </p>
+        <p>
+          Thank you for visiting our website. <b>Disclaimer & Privacy Policy</b>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+   <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/667955b69d7f358570d2b506/1i14vdlcd';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <!-- jQery -->
+  <script src= {% static "js/jquery-3.4.1.min.js" %}></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src= {% static "js/bootstrap.js" %}></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src= {% static "js/custom.js" %}></script>
+  <script type="module" crossorigin src="{% static 'js/script2.js' %}"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

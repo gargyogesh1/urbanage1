@@ -1,0 +1,55 @@
+{% load static %}
+<section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          ENQUIRE NOW
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form method="POST" >
+              {% csrf_token %}
+              <div>
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" />
+              </div>
+              <div>
+                  <input type="text" name="phone_no" class="form-control" placeholder="Phone Number" />
+                  <div style="color:red;">
+                    {% if form.phone_no.errors %}
+                    {% comment %} {% for error in form.phone_no.errors %} {% endcomment %}
+                   Not a valid no
+                  
+                  {% endif %}
+                    </div>
+              </div>
+             
+              <div>
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <div>
+                  <input type="text" name="amount" class="form-control" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                  <button type="submit" class="btn btn-primary">
+                      SUBMIT
+                  </button>
+              </div>
+          </form>
+          
+          </div>
+        </div>
+        {% comment %} <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap">
+              <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=77.04540252685548%2C28.399931694825497%2C77.07299709320068%2C28.41201114880411&amp;layer=mapnik&amp;marker=28.40597159397982%2C77.05919981002808" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=28.4060&amp;mlon=77.0592#map=16/28.4060/77.0592">View Larger Map</a></small>
+            </div>
+          </div>
+        </div> {% endcomment %}
+      <div class="col-md-6" >
+              <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=77.04540252685548%2C28.399931694825497%2C77.07299709320068%2C28.41201114880411&amp;layer=mapnik&amp;marker=28.40597159397982%2C77.05919981002808" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=28.4060&amp;mlon=77.0592#map=16/28.4060/77.0592">View Larger Map</a></small>
+      </div>
+      </div>
+    </div>
+  </section>

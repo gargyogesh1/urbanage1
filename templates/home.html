@@ -1,0 +1,47 @@
+{% extends 'comman.html' %}
+
+{% block content %}
+
+    {% load static %}
+    <!-- end header section -->
+    <!-- slider section -->
+    
+    {% include 'slider/slider.html' %}
+    </div>
+      <!-- end slider section -->
+    </div>
+   
+    <!-- offer section -->
+    <div id="Overview">
+    {% include 'offer.html' %}
+    </div>
+    <!-- end offer section -->
+  
+    <!-- properties section -->
+   
+    {% include 'properties.html' with cards=cards %}
+    
+    <!-- properties section -->
+
+    <!-- about section -->
+     
+     {% include 'about.html' %}
+    <!-- end about section -->
+    
+    {% include 'price.html' %}
+
+   
+      {% include 'amenities.html' %}
+    <!-- client section -->
+    {% comment %} {% include 'client.html' %} {% endcomment %}
+    <!-- end client section -->
+
+    <!-- book section -->
+    {% include 'gallery.html' %}
+    <div>
+      {% include 'contact.html' with form=form %}
+       </div>
+      <!-- end book section -->
+
+    
+{% endblock content %}
