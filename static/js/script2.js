@@ -161,7 +161,7 @@ function A(g) {
         } else if (r.isBeginning) {
             direction = 'next';
         }
-    }, 9000);
+    }, 5000);
 
     return r;
 }

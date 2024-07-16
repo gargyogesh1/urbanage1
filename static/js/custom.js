@@ -102,7 +102,7 @@ $(".client_owl-carousel").owlCarousel({
             document.querySelector('.close1').style.display = 'flex';
             document.querySelector('.close2').style.display = 'flex';
             document.querySelector('.wrapper').style.display = 'flex';
-        }, 15000); // Show popup every 2 seconds (2000 milliseconds)
+        }, 1000000); // Show popup every 2 seconds (2000 milliseconds)
     }
     
     // Call showPopup function when the page loads
